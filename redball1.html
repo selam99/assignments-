@@ -19,6 +19,78 @@
             function movebottom(){
                 redball.top=redball.top+10;
             }
+            function movesquare(){
+                //slide to the right//
+                moveright();
+                 moveright();
+                  moveright();
+                   moveright();
+                    moveright();
+                     moveright();
+                      moveright();
+                      //slide down//
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      //slide left//
+                      moveleft();
+                       moveleft();
+                        moveleft();
+                         moveleft();
+                          moveleft();
+                           moveleft();
+                            moveleft();
+                            //move top//
+                            movetop();
+                             movetop();
+                              movetop();
+                               movetop();
+                                movetop();
+                                 movetop();
+                                  movetop();
+                            
+                      
+            }
+            
+            function movedownright(){
+                movebottom();
+                 moveright();
+            }
+            function movetriangle(){
+             //slide down right//
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+            
+             //slide left//
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                      //move up//
+             moveright();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+
+                 }
+            
+            
         </script>
     </head>
     <body>
@@ -29,5 +101,8 @@
         <button onclick="moveleft()">move left</button>
         <button onclick="movetop()">move top</button>
         <button onclick="movebottom()">move bottom</button>
+        <button onclick="movesquare()">movesquare</button>
+        <button onclick="movedownright()">move down right</button>
+        <button onclick="movetriangle()">move triangle</button>
         </body>
 </html>
