@@ -60,6 +60,20 @@
                 movebottom();
                  moveright();
             }
+            function movedownleft(){
+              movebottom();
+              moveleft();
+            }
+              function movetopleft(){
+                movetop();
+                moveleft();
+              }
+                function movetopright(){
+                  movetop();
+                 moveright();
+                
+              }
+            
             function movetriangle(){
              //slide down right//
                    movedownright();
@@ -89,6 +103,72 @@
                  movetop();
 
                  }
+                 function moveoctagon(){
+                 moveright();
+                 moveright();
+                  moveright();
+                   moveright();
+                    moveright();
+                     moveright();
+                      moveright();
+                   
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                  
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                  
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   
+                    moveleft();
+                       moveleft();
+                        moveleft();
+                         moveleft();
+                          moveleft();
+                           moveleft();
+                            moveleft();
+                            
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                            
+                 }
             
             
         </script>
@@ -103,6 +183,12 @@
         <button onclick="movebottom()">move bottom</button>
         <button onclick="movesquare()">movesquare</button>
         <button onclick="movedownright()">move down right</button>
-        <button onclick="movetriangle()">move triangle</button>
+       <button onclick="movetriangle()">move triangle</button>
+       <button onclick="movetopleft()">move top left</button>
+       <button onclick="movetopright()">move top right</button>
+       <button onclick="movedownleft()">move down left</button>
+       <button onclick="moveoctagon()">move octagon</button>
+        
+        </button>
         </body>
 </html>
