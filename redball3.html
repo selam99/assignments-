@@ -7,17 +7,39 @@
             alert('hi there');
         }
         function moveright(){
+         if(redball.left==300){
+          console.log("right wall hit");
+         }
+         else{
+          redball.left=redball.left +10;
+         }
+         }
+                 
         
-        redball.left=redball.left+10;
-        }
             function moveleft(){
-                redball.left=redball.left-10;
+             
+            if(redball.left== -10){
+             console.log("left wall hit")
+            }
+            else{
+             redball.left=redball.left-10;
+            }
             }
             function movetop(){
-                redball.top=redball.top-10;
+                if(redball.top==0){
+                 console.log("top wall hit");
             }
-            function movebottom(){
-                redball.top=redball.top+10;
+            else{
+             redball.top=redball.top-10;
+            }
+            }
+            function movebottom(){ 
+             if(redball.top==460){
+              console.log("bottom wall hit");
+             }
+             else{
+             redball.top=redball.top +10;
+             }
             }
             function movesquare(){
                 //slide to the right//
