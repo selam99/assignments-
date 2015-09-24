@@ -1,24 +1,210 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+           #redball{
+               position:absolute;
+               top:150px;
+               left:150px;
+           } 
+            
+        </style>
         <script>
             function pfadeout(){
-                var myparagraph= $("#you");
+                var myparagraph= $("#Me");
                 myparagraph.fadeOut();
                
+            }
+            function pfadein(){
+                var myparagraph=$("#Me");
+                 myparagraph.fadeIn();
+            }
+            function movetop(){
+                var ball =$("#redball");
+                   ball.animate({"top":"-=10px"}, 100,"linear");
                 
             }
+            function movebottom(){
+                var ball =$("#redball");
+                   ball.animate({"top":"+=10px"}, 100,"linear");
+            }
+            function moveright(){
+                var ball =$("#redball");
+                   ball.animate({"left":"+=10px"}, 100,"linear");
+            }
+             function moveleft(){
+                var ball =$("#redball");
+                   ball.animate({"left":"-=10px"}, 100,"linear");
+            }
+            function movedownright(){
+                movebottom();
+                 moveright();
+            }
+             function movedownleft(){
+              movebottom();
+              moveleft();
+            }
+             function movetopleft(){
+                movetop();
+                moveleft();
+              }
+              
+                function movetopright(){
+                  movetop();
+                 moveright();
+                
+              }
+            
+            function movesquare(){
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+                
+            }
+            
+                 function movetriangle(){
+             //slide down right//
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+            
+             //slide left//
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                     moveleft();
+                      //move up//
+             moveright();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+
+                 }
+                  function moveoctagon(){
+                 moveright();
+                 moveright();
+                  moveright();
+                   moveright();
+                    moveright();
+                     moveright();
+                      moveright();
+                   
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                   movedownright();
+                  
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                      movebottom();
+                  
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   movedownleft();
+                   
+                    moveleft();
+                       moveleft();
+                        moveleft();
+                         moveleft();
+                          moveleft();
+                           moveleft();
+                            moveleft();
+                            
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            movetopleft();
+                            
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 movetop();
+                 
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                       movetopright();
+                            
+                 }
+            
+
+            
+            
         </script>
         
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>     
        </head>
         <body>
-            <p id="Me"> learning query</p>
+            <p id="Me"> learning query</p> 
+             <img id="redball" src="http://lrn.icstars.org/redball.jpg"> </img>
+            
             <p id="you"> paragraph two</p>
             
         </body>
-        <button onclick="pfadeout()">fade out</button>
-        
-        </html>
-     
-        
+           
+            <button onclick="sayhello()"> hello world</button> 
+            <button onclick="moveright()">move right</button>
+            <button onclick="moveleft()">move left</button>
+            <button onclick="movetop()">move top</button>
+            <button onclick="movebottom()">move bottom</button>
+            <button onclick="movesquare()">movesquare</button>
+            <button onclick="movedownright()">move down right</button>
+            <button onclick="movetriangle()">move triangle</button>
+            <button onclick="movetopleft()">move top left</button>
+            <button onclick="movetopright()">move top right</button>
+            <button onclick="movedownleft()">move down left</button>
+            <button onclick="moveoctagon()">move octagon</button>
+            
+            <button onclick="pfadeout()">fade out</button>
+            <button onclick="pfadein()">fade in</button>
+            
+            </html>
+            
